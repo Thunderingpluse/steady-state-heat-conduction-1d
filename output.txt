@@ -1,0 +1,126 @@
+1D Steady State Heat Conduction Solver
+Enter rod length L (m): 0.1
+Enter number of divisions (n_div): 50
+Enter left boundary temperature T0: 1000
+Enter right boundary temperature Tn: 200
+Enter thermal conductivity k (W/mK): 500
+Enter volumetric heat generation g (W/m^3): 5000000
+
+Computed Parameters:
+dx = 0.002
+Number of nodes = 51
+Internal nodes = 49
+
+Generated Finite Difference Equations:
+
+Node 1: -(1000.0) + 2*T1 - (T2) = 0.040
+Node 2: -(T1) + 2*T2 - (T3) = 0.040
+Node 3: -(T2) + 2*T3 - (T4) = 0.040
+Node 4: -(T3) + 2*T4 - (T5) = 0.040
+Node 5: -(T4) + 2*T5 - (T6) = 0.040
+Node 6: -(T5) + 2*T6 - (T7) = 0.040
+Node 7: -(T6) + 2*T7 - (T8) = 0.040
+Node 8: -(T7) + 2*T8 - (T9) = 0.040
+Node 9: -(T8) + 2*T9 - (T10) = 0.040
+Node 10: -(T9) + 2*T10 - (T11) = 0.040
+Node 11: -(T10) + 2*T11 - (T12) = 0.040
+Node 12: -(T11) + 2*T12 - (T13) = 0.040
+Node 13: -(T12) + 2*T13 - (T14) = 0.040
+Node 14: -(T13) + 2*T14 - (T15) = 0.040
+Node 15: -(T14) + 2*T15 - (T16) = 0.040
+Node 16: -(T15) + 2*T16 - (T17) = 0.040
+Node 17: -(T16) + 2*T17 - (T18) = 0.040
+Node 18: -(T17) + 2*T18 - (T19) = 0.040
+Node 19: -(T18) + 2*T19 - (T20) = 0.040
+Node 20: -(T19) + 2*T20 - (T21) = 0.040
+Node 21: -(T20) + 2*T21 - (T22) = 0.040
+Node 22: -(T21) + 2*T22 - (T23) = 0.040
+Node 23: -(T22) + 2*T23 - (T24) = 0.040
+Node 24: -(T23) + 2*T24 - (T25) = 0.040
+Node 25: -(T24) + 2*T25 - (T26) = 0.040
+Node 26: -(T25) + 2*T26 - (T27) = 0.040
+Node 27: -(T26) + 2*T27 - (T28) = 0.040
+Node 28: -(T27) + 2*T28 - (T29) = 0.040
+Node 29: -(T28) + 2*T29 - (T30) = 0.040
+Node 30: -(T29) + 2*T30 - (T31) = 0.040
+Node 31: -(T30) + 2*T31 - (T32) = 0.040
+Node 32: -(T31) + 2*T32 - (T33) = 0.040
+Node 33: -(T32) + 2*T33 - (T34) = 0.040
+Node 34: -(T33) + 2*T34 - (T35) = 0.040
+Node 35: -(T34) + 2*T35 - (T36) = 0.040
+Node 36: -(T35) + 2*T36 - (T37) = 0.040
+Node 37: -(T36) + 2*T37 - (T38) = 0.040
+Node 38: -(T37) + 2*T38 - (T39) = 0.040
+Node 39: -(T38) + 2*T39 - (T40) = 0.040
+Node 40: -(T39) + 2*T40 - (T41) = 0.040
+Node 41: -(T40) + 2*T41 - (T42) = 0.040
+Node 42: -(T41) + 2*T42 - (T43) = 0.040
+Node 43: -(T42) + 2*T43 - (T44) = 0.040
+Node 44: -(T43) + 2*T44 - (T45) = 0.040
+Node 45: -(T44) + 2*T45 - (T46) = 0.040
+Node 46: -(T45) + 2*T46 - (T47) = 0.040
+Node 47: -(T46) + 2*T47 - (T48) = 0.040
+Node 48: -(T47) + 2*T48 - (T49) = 0.040
+Node 49: -(T48) + 2*T49 - (200.0) = 0.040
+
+Matrix A and Vector B
+  [   1.0     0.0     0.0  ...     0.0     0.0     0.0]    [  1000.0]
+  [   1.0    -2.0     1.0  ...     0.0     0.0     0.0]    [    -0.0]
+  [   0.0     1.0    -2.0  ...     0.0     0.0     0.0]    [    -0.0]
+  [                        ...                        ]    [   ...  ]
+  [   0.0     0.0     0.0  ...    -2.0     1.0     0.0]    [    -0.0]
+  [   0.0     0.0     0.0  ...     1.0    -2.0     1.0]    [    -0.0]
+  [   0.0     0.0     0.0  ...     0.0     0.0     1.0]    [   200.0]
+
+Final Results
+Node 0: 1000.00 C
+Node 1: 984.98 C
+Node 2: 969.92 C
+Node 3: 954.82 C
+Node 4: 939.68 C
+Node 5: 924.50 C
+Node 6: 909.28 C
+Node 7: 894.02 C
+Node 8: 878.72 C
+Node 9: 863.38 C
+Node 10: 848.00 C
+Node 11: 832.58 C
+Node 12: 817.12 C
+Node 13: 801.62 C
+Node 14: 786.08 C
+Node 15: 770.50 C
+Node 16: 754.88 C
+Node 17: 739.22 C
+Node 18: 723.52 C
+Node 19: 707.78 C
+Node 20: 692.00 C
+Node 21: 676.18 C
+Node 22: 660.32 C
+Node 23: 644.42 C
+Node 24: 628.48 C
+Node 25: 612.50 C
+Node 26: 596.48 C
+Node 27: 580.42 C
+Node 28: 564.32 C
+Node 29: 548.18 C
+Node 30: 532.00 C
+Node 31: 515.78 C
+Node 32: 499.52 C
+Node 33: 483.22 C
+Node 34: 466.88 C
+Node 35: 450.50 C
+Node 36: 434.08 C
+Node 37: 417.62 C
+Node 38: 401.12 C
+Node 39: 384.58 C
+Node 40: 368.00 C
+Node 41: 351.38 C
+Node 42: 334.72 C
+Node 43: 318.02 C
+Node 44: 301.28 C
+Node 45: 284.50 C
+Node 46: 267.68 C
+Node 47: 250.82 C
+Node 48: 233.92 C
+Node 49: 216.98 C
+Node 50: 200.00 C
