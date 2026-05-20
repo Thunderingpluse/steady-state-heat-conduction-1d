@@ -21,7 +21,7 @@ $$\frac{T_{i-1} - 2T_i + T_{i+1}}{\Delta x^2} + \frac{\dot{g}}{k} = 0 \implies T
 This forms a system of linear equations $AT = B$ which is solved directly using direct matrix solvers. Dirichlet boundary conditions are applied at the rod boundaries ($x=0$ and $x=L$).
 
 ## File Structure
-- `exp3.py` - The complete implementation including FDM matrix construction, printing equations, solving, and temperature distribution plotting.
+- `steady_state_conduction_1d.py` - The complete implementation including FDM matrix construction, printing equations, solving, and temperature distribution plotting.
 - `output.txt` - Generated logs detailing calculated grid spacing, boundary equations, A/B matrices, and nodal temperatures.
 - `Graph.png` - A plot displaying the temperature profile across the rod.
 
@@ -29,5 +29,5 @@ This forms a system of linear equations $AT = B$ which is solved directly using 
 Ensure you have the required dependencies:
 ```bash
 pip install numpy matplotlib
-python exp3.py
+python steady_state_conduction_1d.py
 ```
